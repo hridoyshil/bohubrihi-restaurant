@@ -4,15 +4,21 @@ import COMMENTS from '../data/comments';
 const initialState = {
     dishes: DISHES,
     comments: COMMENTS,
-    sample: "Hello World"
 }
 
 export const Reducer = (state = initialState, action) => {
-    if (action.type === "TEST") {
+    if (action.type === 'ADD_COMMENT') {
+        let comment = action.payload;
+        comment.id = state.comments.length;
+        comment.date = new Date().toDateString();
+        console.log(comment);
         return {
             ...state,
-            sample: action.sty
+            comments: state.comments.concat(comment)
         }
     }
     return state;
 }
+
+
+
