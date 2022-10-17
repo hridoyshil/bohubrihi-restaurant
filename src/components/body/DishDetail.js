@@ -5,7 +5,7 @@ import LoadComments from './LoadComments';
 const DishDetail = props => {
     return (
         <div>
-            <Card style={{ marginTop: "50px" }}>
+            <Card style={{ marginTop: "60px" }}>
                 <CardImg top src={props.dish.image} alt={props.dish.name} />
                 <CardBody style={{ textAlign: "left" }}>
                     <CardTitle>{props.dish.name}</CardTitle>
