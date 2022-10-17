@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, Col } from 'reactstrap';
 
@@ -32,6 +31,7 @@ class Contact extends Component {
     }
 
     render() {
+        document.title = "Contact";
         return (
             <div className="container">
                 <div className="row row-content" style={{ paddingLeft: "20px", textAlign: "left" }}>
