@@ -12,8 +12,18 @@ const mapStateToProps = state => {
 class Home extends Component {
     componentDidMount() {
         console.log("Home State: ", this.state);
-        console.log("Home Props: ", this.props);
+        this.props.dispatch({
+            type: 'TEST',
+            sty: "Bohubrihi"
+        })
     }
+
+    componentDidUpdate() {
+        console.log("Home props update: ", this.state);
+
+    }
+
+
     render() {
         document.title = "Bohubrihi Restaurant";
         return (
