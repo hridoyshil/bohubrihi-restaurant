@@ -21,6 +21,7 @@ const Body = () => {
 
 
             <Menu />
+            < Contact />
         </div>
     );
 }
